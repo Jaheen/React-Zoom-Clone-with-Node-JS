@@ -1,0 +1,23 @@
+{
+  "name": "zoom-clone-server",
+  "version": "1.0.0",
+  "description": "A simple server to handle zoom clone",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "author": "Jaheen Afsar Syed",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "peer": "^0.5.3",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.8",
+    "@types/node": "^14.11.8",
+    "@types/socket.io": "^2.1.11",
+    "nodemon": "^2.0.4"
+  }
+}

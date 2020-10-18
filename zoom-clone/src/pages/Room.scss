@@ -1,0 +1,90 @@
+.Room{
+    height: 100vh;
+    .Room__header{
+        background-color: rgb(23, 23, 23);
+        padding: 1em .5em;
+        *{
+            color: white;
+        }
+        .title{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .roomID{
+            font-size: 15px;
+        }
+        .inviteLink__btn{
+            background-color: rgb(54, 205, 224);
+        }
+    }
+    .Room__videoGrid{
+        background-color: rgb(10, 10, 10);
+        flex: 1;
+        overflow: auto;
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(50% ,1fr));
+        grid-template-rows: repeat(auto-fill, minmax(50% ,1fr));
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(50% ,1fr);
+        overflow-x: auto;
+        video{
+            width: 100%;
+            height: 100%;
+        }
+        .MyVideoContainer{
+            width: 100%;
+            height: 100%;
+            position: relative;
+            .myName{
+                color: white;
+                text-transform: uppercase;
+                background-color: #000;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+            .myVideo{
+                height: inherit;
+                outline: none;
+            }
+        }
+    }
+    .Room__controls{
+        background-color: rgb(23, 23, 23);
+        *{
+            color: white;
+        }
+    }
+}
+
+.ChatDrawer{
+    position: relative;
+    .MuiDrawer-paper{
+        width: 30%;
+        background-color: rgb(10, 10, 10);
+        *{
+            color: white;
+        }
+    }
+    .drawer__closeBtn{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+}
+
+@media(max-width:768px){
+    .Room{
+        .Room__videoGrid{
+            grid-template-columns: repeat(auto-fill, 100%);
+            grid-template-rows: repeat(auto-fill, 50%);
+        }
+    }
+    .ChatDrawer{
+        .MuiDrawer-paper{
+            width: 100% !important;
+        }
+    }
+}

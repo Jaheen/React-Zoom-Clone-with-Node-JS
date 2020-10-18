@@ -1,0 +1,24 @@
+.Welcome{
+    height: 100vh;
+    background-color: rgb(10, 10, 10);
+    .Welcome__dialog{
+        background-color: white;
+        width: fit-content;
+        .MeetingForm{
+            min-height: 35%;
+            & > *{
+                margin: 1em;
+            }
+            .MeetingForm__Action{
+                background-color: rgb(49, 13, 175);
+                color: white;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .MeetingForm{
+        width: 80% !important;
+    }
+}

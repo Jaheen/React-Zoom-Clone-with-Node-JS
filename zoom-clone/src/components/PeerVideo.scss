@@ -1,0 +1,13 @@
+.PeerVideoContainer{
+    position: relative;
+    .peer__name{
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        text-transform: uppercase;
+    }
+    .peer__video{
+        outline: none;
+    }
+}
